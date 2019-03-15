@@ -28,3 +28,8 @@ for d in data:
     if 'good' in d:
         good.append(good)
 print('一共有', len(good), '筆留言提到\'good\'')
+
+#list comprehension
+great = [d for d in data if 'great' in d]
+# output = [運算結果 for var. in list 篩選條件]
+print('一共有', len(good), '筆留言提到\'great\'')
