@@ -2,10 +2,12 @@
 #Number guest
 
 import random
+print('猜數字遊戲開始囉~')
+start = int(input('請決定本局最小的數字: '))
+end = int(input('請請決定本局最大的數字: '))
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 chance = 10
-
 while chance > 0:
     guest = int(input('猜猜數字是多少: '))
     chance -= 1
